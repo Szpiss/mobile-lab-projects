@@ -60,7 +60,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
             }
         }
     }
-·
     private fun getData() {
         name = etName.text.toString().trim()
         email = etEmail.text.toString().trim()
