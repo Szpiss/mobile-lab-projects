@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">注册界面</string>
+    <string name="register_title">注册</string>
+    <string name="register_qq">用QQ注册</string>
+    <string name="register_wechat">用微信注册</string>
+    <string name="register_email">使用电子邮箱注册</string>
+    <string name="label_name">名字</string>
+    <string name="label_email">邮箱</string>
+    <string name="label_pwd">密码</string>
+    <string name="label_sex">性别</string>
+    <string name="label_hobby">请选择兴趣爱好：</string>
+    <string name="hint_name">请输入名字</string>
+    <string name="hint_email">请输入邮箱</string>
+    <string name="hint_pwd">请输入密码</string>
+    <string name="sex_boy">男</string>
+    <string name="sex_girl">女</string>
+    <string name="hobby_sing">唱歌</string>
+    <string name="hobby_dance">跳舞</string>
+    <string name="hobby_read">读书</string>
+    <string name="submit">提交</string>
+    <string name="toast_name_required">请输入名字</string>
+    <string name="toast_email_required">请输入邮箱</string>
+    <string name="toast_pwd_required">请输入密码</string>
+    <string name="toast_sex_required">请选择性别</string>
+    <string name="toast_hobby_required">请选择兴趣爱好</string>
+    <string name="toast_register_success">注册成功</string>
+</resources>
