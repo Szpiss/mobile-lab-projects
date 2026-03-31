@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tvStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="tvInfo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/news_gray_color</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ivImg">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">96dp</item>
+    </style>
+
+    <style name="ivImgThree">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="TabText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/news_gray_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

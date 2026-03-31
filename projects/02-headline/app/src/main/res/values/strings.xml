@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">仿今日头条</string>
+    <string name="title_app">仿今日头条</string>
+    <string name="search_hint">搜索你感兴趣的内容</string>
+    <string name="tab_recommend">推荐</string>
+    <string name="tab_ai">AI</string>
+    <string name="tab_novel">小说</string>
+    <string name="tab_beijing">北京</string>
+    <string name="tab_video">视频</string>
+    <string name="tab_hot">热点</string>
+    <string name="tab_entertainment">娱乐</string>
+    <string name="tag_top">置顶</string>
+</resources>

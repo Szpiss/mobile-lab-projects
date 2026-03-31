@@ -25,3 +25,5 @@ dependencyResolutionManagement {
 rootProject.name = "android-course-projects"
 include ':app'
 project(':app').projectDir = file('projects/01-register-page/app')
+include ':headlineApp'
+project(':headlineApp').projectDir = file('projects/02-headline/app')
