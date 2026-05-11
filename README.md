@@ -8,6 +8,7 @@ Android 开发课程项目仓库，用来统一保存每次实验的代码、资
 - `projects/01-register-page/`：实验一，注册界面实战。
 - `projects/02-headline/`：实验二，仿今日头条推荐列表。
 - `projects/03-mall-list/`：实验三，购物商场列表。
+- `projects/04-save-qq/`：实验四，保存 QQ 账号与密码。
 
 ## 当前多模块配置
 
@@ -16,6 +17,7 @@ Android 开发课程项目仓库，用来统一保存每次实验的代码、资
 - `app`：对应 `projects/01-register-page/app`
 - `headlineApp`：对应 `projects/02-headline/app`
 - `mallApp`：对应 `projects/03-mall-list/app`
+- `saveQQApp`：对应 `projects/04-save-qq/app`
 
 模块映射定义在 [settings.gradle](/Users/cuing/AndroidStudioProjects/MyApplication/settings.gradle)。
 
@@ -57,6 +59,19 @@ Android 开发课程项目仓库，用来统一保存每次实验的代码、资
 
 详细说明见 [projects/03-mall-list/README.md](/Users/cuing/AndroidStudioProjects/MyApplication/projects/03-mall-list/README.md)。
 
+### 实验四：保存 QQ 账号与密码
+
+- 目标：完成课本 5.3.3「保存 QQ 账号与密码」实验，使用 `SharedPreferences` 保存登录信息。
+- 重点：`SharedPreferences` 数据写入、读取、工具类封装、程序重启后自动回显。
+- 实现方式：
+  - 新建 `SPSaveQQ` 工具类，封装 `saveUserInfo()` 和 `getUserInfo()`。
+  - 使用 `getSharedPreferences("data", Context.MODE_PRIVATE)` 将数据保存到 `data.xml`。
+  - 保存账号键名为 `userName`，保存密码键名为 `pwd`，与教材示例保持一致。
+  - 在 `MainActivity` 启动时读取本地数据，并自动填充账号和密码输入框。
+  - 点击“登录”按钮后进行非空校验，勾选“记住密码”时保存数据。
+
+详细说明见 [projects/04-save-qq/README.md](/Users/cuing/AndroidStudioProjects/MyApplication/projects/04-save-qq/README.md)。
+
 ## Android Studio 使用方式
 
 1. 直接打开仓库根目录 `MyApplication/`。
@@ -65,6 +80,7 @@ Android 开发课程项目仓库，用来统一保存每次实验的代码、资
    - 实验一选择 `app`
    - 实验二选择 `headlineApp`
    - 实验三选择 `mallApp`
+   - 实验四选择 `saveQQApp`
 4. 连接模拟器或真机后运行。
 
 ## 常用命令
@@ -75,6 +91,7 @@ Android 开发课程项目仓库，用来统一保存每次实验的代码、资
 ./gradlew :app:assembleDebug
 ./gradlew :headlineApp:assembleDebug
 ./gradlew :mallApp:assembleDebug
+./gradlew :saveQQApp:assembleDebug
 ```
 
 ## 后续扩展建议

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="qq_blue">#12B7F5</color>
+    <color name="qq_button">#45C01A</color>
+    <color name="qq_text_main">#222222</color>
+    <color name="qq_text_hint">#888888</color>
+    <color name="qq_line">#E6E6E6</color>
+</resources>
