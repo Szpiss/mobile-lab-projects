@@ -1,101 +1,75 @@
 # android-course-projects
 
-Android 开发课程项目仓库，用来统一保存每次实验的代码、资源和说明文档。
+Android 课程实验仓库。当前仓库按课程来源分成两块：早期的 Android 应用开发小实验，以及现在的《移动应用开发工程实践》实验。
 
 ## 仓库结构
 
-- `projects/`：所有实验项目都放在这个目录下。
-- `projects/01-register-page/`：实验一，注册界面实战。
-- `projects/02-headline/`：实验二，仿今日头条推荐列表。
-- `projects/03-mall-list/`：实验三，购物商场列表。
-- `projects/04-save-qq/`：实验四，保存 QQ 账号与密码。
+```text
+projects/
+├── android-app-development/      # Android 应用开发小实验
+│   ├── 01-register-page/         # 注册界面
+│   ├── 02-headline/              # 仿今日头条列表
+│   └── 03-save-qq/               # SharedPreferences 保存 QQ 账号密码
+└── mobile-app-practice/          # 移动应用开发工程实践
+    ├── 02-handler-webview/       # 实验2 Handler 的使用
+    └── 03-basic-animation/       # 实验3 基础动画
 
-## 当前多模块配置
+output/
+└── mobile-app-practice/          # 实践课报告和实际运行截图
+```
 
-为了在 Android Studio 中直接打开仓库根目录运行，这个仓库被配置成了多模块工程。
+## 一、Android 应用开发小实验
 
-- `app`：对应 `projects/01-register-page/app`
-- `headlineApp`：对应 `projects/02-headline/app`
-- `mallApp`：对应 `projects/03-mall-list/app`
-- `saveQQApp`：对应 `projects/04-save-qq/app`
+这部分是 GitHub 上最开始整理的几个 Android 基础小实验，主要用于练习常见控件、列表和本地存储。
 
-模块映射定义在 [settings.gradle](/Users/cuing/AndroidStudioProjects/MyApplication/settings.gradle)。
+| 实验 | 模块 | 目录 | 内容 |
+| --- | --- | --- | --- |
+| 注册界面 | `app` | [01-register-page](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/01-register-page) | 注册页布局、输入校验、Toast 提示 |
+| 仿今日头条列表 | `headlineApp` | [02-headline](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline) | RecyclerView、多条目新闻列表 |
+| 保存 QQ 账号密码 | `saveQQApp` | [03-save-qq](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/03-save-qq) | SharedPreferences 保存与回显 |
 
-## 每个实验做了什么
+构建命令：
 
-### 实验一：注册界面
+```bash
+./gradlew :app:assembleDebug
+./gradlew :headlineApp:assembleDebug
+./gradlew :saveQQApp:assembleDebug
+```
 
-- 目标：完成一个带背景图、注册方式入口、输入框、单选框、复选框和提交按钮的注册页面。
-- 重点：基础控件使用、样式抽取、点击事件处理、输入校验。
-- 实现方式：
-  - 使用 XML 完成整体布局和公共样式封装。
-  - 在 `MainActivity` 中获取控件引用并处理提交事件。
-  - 对姓名、邮箱、密码、性别、兴趣爱好做非空校验。
-  - 提交成功后通过 `Toast` 提示，并在 Logcat 输出注册信息。
+## 二、移动应用开发工程实践
 
-详细说明见 [projects/01-register-page/README.md](/Users/cuing/AndroidStudioProjects/MyApplication/projects/01-register-page/README.md)。
+这部分是现在课程的实验交付内容，代码、报告和运行截图已经单独整理。
 
-### 实验二：仿今日头条推荐列表
+| 实验 | 模块 | 目录 | 输出 |
+| --- | --- | --- | --- |
+| 实验2 Handler 的使用 | `practiceHandlerApp` | [02-handler-webview](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/02-handler-webview) | [报告与截图](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/02-handler) |
+| 实验3 基础动画 | `practiceAnimationApp` | [03-basic-animation](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/03-basic-animation) | [报告与截图](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/03-basic-animation) |
 
-- 目标：实现一个类似今日头条推荐页的新闻列表界面。
-- 重点：`RecyclerView` 多条目类型、标题栏布局、静态数据适配、列表分隔效果。
-- 实现方式：
-  - 顶部使用自定义标题栏和频道栏。
-  - 列表部分使用 `RecyclerView`。
-  - 通过 `NewsAdapter` 区分单图新闻和三图新闻两种条目样式。
-  - 在 `MainActivity` 中构造新闻静态数据并绑定到适配器。
+构建命令：
 
-详细说明见 [projects/02-headline/README.md](/Users/cuing/AndroidStudioProjects/MyApplication/projects/02-headline/README.md)。
-
-### 实验三：购物商场列表
-
-- 目标：参考课本中的动物列表示例，实现一个购物商场商品列表。
-- 重点：`RecyclerView` 的基础使用、单一条目布局、数据类与适配器配合。
-- 实现方式：
-  - 每个列表项展示商品图片、商品名称和商品简介。
-  - 使用 `Goods` 数据类描述每个商品。
-  - 使用 `GoodsAdapter` 负责条目创建和数据绑定。
-  - 在 `MainActivity` 中准备商品数据并设置线性布局管理器。
-
-详细说明见 [projects/03-mall-list/README.md](/Users/cuing/AndroidStudioProjects/MyApplication/projects/03-mall-list/README.md)。
-
-### 实验四：保存 QQ 账号与密码
-
-- 目标：完成课本 5.3.3「保存 QQ 账号与密码」实验，使用 `SharedPreferences` 保存登录信息。
-- 重点：`SharedPreferences` 数据写入、读取、工具类封装、程序重启后自动回显。
-- 实现方式：
-  - 新建 `SPSaveQQ` 工具类，封装 `saveUserInfo()` 和 `getUserInfo()`。
-  - 使用 `getSharedPreferences("data", Context.MODE_PRIVATE)` 将数据保存到 `data.xml`。
-  - 保存账号键名为 `userName`，保存密码键名为 `pwd`，与教材示例保持一致。
-  - 在 `MainActivity` 启动时读取本地数据，并自动填充账号和密码输入框。
-  - 点击“登录”按钮后进行非空校验，勾选“记住密码”时保存数据。
-
-详细说明见 [projects/04-save-qq/README.md](/Users/cuing/AndroidStudioProjects/MyApplication/projects/04-save-qq/README.md)。
+```bash
+./gradlew :practiceHandlerApp:assembleDebug
+./gradlew :practiceAnimationApp:assembleDebug
+```
 
 ## Android Studio 使用方式
 
 1. 直接打开仓库根目录 `MyApplication/`。
 2. 等待 Gradle 同步完成。
-3. 在顶部运行配置中按实验选择对应模块：
-   - 实验一选择 `app`
-   - 实验二选择 `headlineApp`
-   - 实验三选择 `mallApp`
-   - 实验四选择 `saveQQApp`
+3. 在运行配置中选择对应模块：
+   - Android 应用开发：`app`、`headlineApp`、`saveQQApp`
+   - 移动应用开发工程实践：`practiceHandlerApp`、`practiceAnimationApp`
 4. 连接模拟器或真机后运行。
 
-## 常用命令
+## 输出文件
 
-在仓库根目录可以直接执行以下命令进行构建：
+- [实验2 Handler 的使用报告](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/02-handler/实验2_Handler的使用_实验报告.docx)
+- [实验2 运行截图](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/02-handler/screenshots)
+- [实验3 基础动画报告](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/03-basic-animation/实验3_基础动画_实验报告.docx)
+- [实验3 运行截图](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/03-basic-animation/screenshots)
 
-```bash
-./gradlew :app:assembleDebug
-./gradlew :headlineApp:assembleDebug
-./gradlew :mallApp:assembleDebug
-./gradlew :saveQQApp:assembleDebug
-```
+## 维护约定
 
-## 后续扩展建议
-
-- 新实验继续按 `projects/04-xxx`、`projects/05-xxx` 的方式新增。
-- 每个实验目录保留自己的 `README.md`，记录实验目标、实现步骤和运行说明。
-- 如果某次实验有特别的素材、截图或老师要求，也可以放在对应实验目录下统一管理。
+- 课程代码统一放在 `projects/` 下，先按课程名分组，再按实验编号分目录。
+- 实践课的报告和运行截图统一放在 `output/mobile-app-practice/` 下。
+- 新增实验时同步更新 `settings.gradle` 和本 README，避免目录、模块名和报告输出不一致。

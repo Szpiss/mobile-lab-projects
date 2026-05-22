@@ -1,7 +1,0 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Base.Theme.MallList" parent="Theme.Material3.Light.NoActionBar">
-        <item name="android:statusBarColor">@color/mall_background</item>
-    </style>
-
-    <style name="Theme.MallList" parent="Base.Theme.MallList" />
-</resources>

@@ -4,6 +4,7 @@
 /local.properties
 .idea
 .DS_Store
+.docx-venv/
 /build
 **/build
 /captures

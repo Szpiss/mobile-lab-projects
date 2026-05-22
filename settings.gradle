@@ -24,10 +24,12 @@ dependencyResolutionManagement {
 
 rootProject.name = "android-course-projects"
 include ':app'
-project(':app').projectDir = file('projects/01-register-page/app')
+project(':app').projectDir = file('projects/android-app-development/01-register-page/app')
 include ':headlineApp'
-project(':headlineApp').projectDir = file('projects/02-headline/app')
-include ':mallApp'
-project(':mallApp').projectDir = file('projects/03-mall-list/app')
+project(':headlineApp').projectDir = file('projects/android-app-development/02-headline/app')
 include ':saveQQApp'
-project(':saveQQApp').projectDir = file('projects/04-save-qq/app')
+project(':saveQQApp').projectDir = file('projects/android-app-development/03-save-qq/app')
+include ':practiceHandlerApp'
+project(':practiceHandlerApp').projectDir = file('projects/mobile-app-practice/02-handler-webview/app')
+include ':practiceAnimationApp'
+project(':practiceAnimationApp').projectDir = file('projects/mobile-app-practice/03-basic-animation/app')
