@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/notepad_primary"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittext_bg"
+        android:gravity="top"
+        android:hint="@string/hint_title"
+        android:inputType="textCapSentences"
+        android:padding="8dp"
+        android:textColorHint="@color/notepad_muted" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_bg"
+        android:gravity="top"
+        android:hint="@string/hint_content"
+        android:inputType="textMultiLine|textCapSentences"
+        android:minLines="8"
+        android:padding="8dp"
+        android:textColorHint="@color/notepad_muted" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/notepad_primary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_del"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/delete_selector"
+            android:contentDescription="@string/delete_note"
+            android:paddingTop="9dp"
+            android:paddingBottom="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/save_selector"
+            android:contentDescription="@string/save_note"
+            android:paddingTop="9dp"
+            android:paddingBottom="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_polish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/polish_selector"
+            android:contentDescription="@string/polish_note"
+            android:paddingTop="9dp"
+            android:paddingBottom="15dp" />
+    </LinearLayout>
+</LinearLayout>

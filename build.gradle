@@ -1,0 +1,4 @@
+// Top-level build file for opening the course repository directly in Android Studio.
+plugins {
+    alias(libs.plugins.android.application) apply false
+}
