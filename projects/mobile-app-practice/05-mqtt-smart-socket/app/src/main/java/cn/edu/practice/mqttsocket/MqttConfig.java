@@ -14,6 +14,7 @@ public final class MqttConfig {
     }
 
     public static boolean hasPassword() {
-        return !"请填写开发设置中的MQTT密码".equals(PASSWORD);
+        return PASSWORD != null && !PASSWORD.trim().isEmpty()
+                && !"请填写开发设置中的MQTT密码".equals(PASSWORD);
     }
 }
