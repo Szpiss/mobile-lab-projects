@@ -86,6 +86,13 @@ public class MainActivity extends AppCompatActivity {
         } else {
             MqttController.getStatus();
             showStatus("已发送获取设备状态命令。\n等待设备通过订阅主题返回功率、电压、电流等数据。");
+            showDetailAlertDialog(new String[]{
+                    "功率(W)：等待设备返回",
+                    "电压(V)：等待设备返回",
+                    "电流(A)：等待设备返回",
+                    "电能(kWh)：等待设备返回",
+                    "状态：已发送查询命令"
+            });
         }
     }
 
