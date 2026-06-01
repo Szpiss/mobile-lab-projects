@@ -28,7 +28,7 @@
 
 ### 1. 页面布局实现
 
-主布局在 [activity_main.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/01-register-page/app/src/main/res/layout/activity_main.xml)。
+主布局在 [activity_main.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/01-register-page/app/src/main/res/layout/activity_main.xml)。
 
 实现思路：
 
@@ -41,7 +41,7 @@
 
 ### 2. 样式抽取
 
-公共样式定义在 [styles.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/01-register-page/app/src/main/res/values/styles.xml)。
+公共样式定义在 [styles.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/01-register-page/app/src/main/res/values/styles.xml)。
 
 这里主要抽取了：
 
@@ -69,7 +69,7 @@
 
 ### 4. 交互逻辑实现
 
-逻辑代码在 [MainActivity.kt](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/01-register-page/app/src/main/java/com/example/myapplication/MainActivity.kt)。
+逻辑代码在 [MainActivity.kt](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/01-register-page/app/src/main/java/com/example/myapplication/MainActivity.kt)。
 
 实现过程：
 
@@ -97,11 +97,11 @@
 
 ## 关键文件
 
-- [MainActivity.kt](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/01-register-page/app/src/main/java/com/example/myapplication/MainActivity.kt)
-- [activity_main.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/01-register-page/app/src/main/res/layout/activity_main.xml)
-- [styles.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/01-register-page/app/src/main/res/values/styles.xml)
-- [strings.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/01-register-page/app/src/main/res/values/strings.xml)
-- [colors.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/01-register-page/app/src/main/res/values/colors.xml)
+- [MainActivity.kt](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/01-register-page/app/src/main/java/com/example/myapplication/MainActivity.kt)
+- [activity_main.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/01-register-page/app/src/main/res/layout/activity_main.xml)
+- [styles.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/01-register-page/app/src/main/res/values/styles.xml)
+- [strings.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/01-register-page/app/src/main/res/values/strings.xml)
+- [colors.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/01-register-page/app/src/main/res/values/colors.xml)
 
 ## 运行方式
 

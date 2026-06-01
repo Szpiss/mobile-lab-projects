@@ -23,17 +23,17 @@
 
 这个实验对应模块 `headlineApp`，代码目录在：
 
-- [projects/android-app-development/02-headline/app](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app)
+- [projects/android-app-development/02-headline/app](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app)
 
-根目录通过 [settings.gradle](/Users/cuing/AndroidStudioProjects/MyApplication/settings.gradle) 把它接入为独立模块，方便直接运行。
+根目录通过 [settings.gradle](/Users/cuing/AndroidStudioProjects/android-course-projects/settings.gradle) 把它接入为独立模块，方便直接运行。
 
 ### 2. 页面布局设计
 
-主页面在 [activity_main.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/res/layout/activity_main.xml)。
+主页面在 [activity_main.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/res/layout/activity_main.xml)。
 
 布局分成三部分：
 
-- 顶部标题栏：通过 [titlebar.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/res/layout/titlebar.xml) 单独抽取
+- 顶部标题栏：通过 [titlebar.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/res/layout/titlebar.xml) 单独抽取
 - 分类频道栏：直接在 `activity_main.xml` 中排列多个 `TextView`
 - 内容列表：使用 `RecyclerView`
 
@@ -47,16 +47,16 @@
 
 为了模拟今日头条样式，做了两种列表项布局：
 
-- [item_one.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/res/layout/item_one.xml)
+- [item_one.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/res/layout/item_one.xml)
   - 用于单图新闻或无图置顶新闻
   - 包含标题、来源、评论数、发布时间和右侧图片
-- [item_two.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/res/layout/item_two.xml)
+- [item_two.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/res/layout/item_two.xml)
   - 用于三图新闻
   - 包含标题、三张图片和底部新闻信息
 
 ### 4. 数据结构设计
 
-新闻实体在 [NewsBean.kt](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/NewsBean.kt)。
+新闻实体在 [NewsBean.kt](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/NewsBean.kt)。
 
 字段包括：
 
@@ -73,7 +73,7 @@
 
 ### 5. 适配器实现
 
-适配器在 [NewsAdapter.kt](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/NewsAdapter.kt)。
+适配器在 [NewsAdapter.kt](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/NewsAdapter.kt)。
 
 具体做法：
 
@@ -89,7 +89,7 @@
 
 ### 6. 页面数据准备
 
-数据准备在 [MainActivity.kt](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/MainActivity.kt) 中完成。
+数据准备在 [MainActivity.kt](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/MainActivity.kt) 中完成。
 
 实现过程：
 
@@ -115,13 +115,13 @@
 
 ## 关键文件
 
-- [MainActivity.kt](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/MainActivity.kt)
-- [NewsAdapter.kt](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/NewsAdapter.kt)
-- [NewsBean.kt](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/NewsBean.kt)
-- [activity_main.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/res/layout/activity_main.xml)
-- [item_one.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/res/layout/item_one.xml)
-- [item_two.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/res/layout/item_two.xml)
-- [titlebar.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/android-app-development/02-headline/app/src/main/res/layout/titlebar.xml)
+- [MainActivity.kt](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/MainActivity.kt)
+- [NewsAdapter.kt](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/NewsAdapter.kt)
+- [NewsBean.kt](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/java/com/example/headlineapp/NewsBean.kt)
+- [activity_main.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/res/layout/activity_main.xml)
+- [item_one.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/res/layout/item_one.xml)
+- [item_two.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/res/layout/item_two.xml)
+- [titlebar.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/android-app-development/02-headline/app/src/main/res/layout/titlebar.xml)
 
 ## 运行方式
 

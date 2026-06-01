@@ -6,8 +6,8 @@
 
 | 实验 | 模块 | 代码目录 | 输出目录 |
 | --- | --- | --- | --- |
-| 实验2 Handler 的使用 | `practiceHandlerApp` | [02-handler-webview](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/02-handler-webview) | [02-handler](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/02-handler) |
-| 实验3 基础动画 | `practiceAnimationApp` | [03-basic-animation](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/03-basic-animation) | [03-basic-animation](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/03-basic-animation) |
+| 实验2 Handler 的使用 | `practiceHandlerApp` | [02-handler-webview](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/mobile-app-practice/02-handler-webview) | [02-handler](/Users/cuing/AndroidStudioProjects/android-course-projects/output/mobile-app-practice/02-handler) |
+| 实验3 基础动画 | `practiceAnimationApp` | [03-basic-animation](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/mobile-app-practice/03-basic-animation) | [03-basic-animation](/Users/cuing/AndroidStudioProjects/android-course-projects/output/mobile-app-practice/03-basic-animation) |
 
 ## 构建命令
 

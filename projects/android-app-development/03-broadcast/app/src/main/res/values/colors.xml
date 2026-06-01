@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page_bg">#F5F7FA</color>
+    <color name="text_main">#1F2937</color>
+    <color name="text_sub">#64748B</color>
+    <color name="duck_blue">#4F8DFF</color>
+    <color name="duck_green">#19A974</color>
+    <color name="duck_orange">#F59E0B</color>
+    <color name="line">#D8DEE9</color>
+</resources>

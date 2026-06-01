@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">实验三广播机制</string>
+    <string name="app_title">实验三：广播机制</string>
+    <string name="app_subtitle">数鸭子案例：无序、有序、拦截与指定接收者</string>
+    <string name="send_unordered">发送无序广播</string>
+    <string name="send_ordered">发送有序广播（优先级不同）</string>
+    <string name="send_same_priority">发送有序广播（优先级相同）</string>
+    <string name="send_intercept">拦截有序广播</string>
+    <string name="send_static">指定广播接收者</string>
+    <string name="clear_result">清空运行结果</string>
+    <string name="result_title">运行结果</string>
+    <string name="result_empty">点击上方按钮后，这里会显示广播接收顺序。</string>
+</resources>

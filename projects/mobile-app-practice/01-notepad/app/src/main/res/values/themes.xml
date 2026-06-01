@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Notepad" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:statusBarColor">@color/notepad_primary_dark</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="colorPrimary">@color/notepad_primary</item>
+        <item name="colorPrimaryVariant">@color/notepad_primary_dark</item>
+    </style>
+
+    <style name="Theme.Notepad" parent="Base.Theme.Notepad" />
+</resources>

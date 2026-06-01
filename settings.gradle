@@ -29,7 +29,15 @@ include ':headlineApp'
 project(':headlineApp').projectDir = file('projects/android-app-development/02-headline/app')
 include ':saveQQApp'
 project(':saveQQApp').projectDir = file('projects/android-app-development/03-save-qq/app')
+include ':broadcastApp'
+project(':broadcastApp').projectDir = file('projects/android-app-development/03-broadcast/app')
+include ':jsonDrawerApp'
+project(':jsonDrawerApp').projectDir = file('projects/android-app-development/04-json-drawer/app')
 include ':practiceHandlerApp'
 project(':practiceHandlerApp').projectDir = file('projects/mobile-app-practice/02-handler-webview/app')
+include ':practiceNotepadApp'
+project(':practiceNotepadApp').projectDir = file('projects/mobile-app-practice/01-notepad/app')
 include ':practiceAnimationApp'
 project(':practiceAnimationApp').projectDir = file('projects/mobile-app-practice/03-basic-animation/app')
+include ':practiceMqttSocketApp'
+project(':practiceMqttSocketApp').projectDir = file('projects/mobile-app-practice/05-mqtt-smart-socket/app')

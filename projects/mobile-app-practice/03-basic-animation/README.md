@@ -18,13 +18,13 @@
 
 ## 关键文件
 
-- [MainActivity.java](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/03-basic-animation/app/src/main/java/com/example/malllist/MainActivity.java)
-- [activity_main.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/03-basic-animation/app/src/main/res/layout/activity_main.xml)
-- [anim.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/03-basic-animation/app/src/main/res/drawable/anim.xml)
-- [translate_anim.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/03-basic-animation/app/src/main/res/anim/translate_anim.xml)
-- [scale_anim.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/03-basic-animation/app/src/main/res/anim/scale_anim.xml)
-- [rotate_anim.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/03-basic-animation/app/src/main/res/anim/rotate_anim.xml)
-- [alpha_anim.xml](/Users/cuing/AndroidStudioProjects/MyApplication/projects/mobile-app-practice/03-basic-animation/app/src/main/res/anim/alpha_anim.xml)
+- [MainActivity.java](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/mobile-app-practice/03-basic-animation/app/src/main/java/com/example/malllist/MainActivity.java)
+- [activity_main.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/mobile-app-practice/03-basic-animation/app/src/main/res/layout/activity_main.xml)
+- [anim.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/mobile-app-practice/03-basic-animation/app/src/main/res/drawable/anim.xml)
+- [translate_anim.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/mobile-app-practice/03-basic-animation/app/src/main/res/anim/translate_anim.xml)
+- [scale_anim.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/mobile-app-practice/03-basic-animation/app/src/main/res/anim/scale_anim.xml)
+- [rotate_anim.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/mobile-app-practice/03-basic-animation/app/src/main/res/anim/rotate_anim.xml)
+- [alpha_anim.xml](/Users/cuing/AndroidStudioProjects/android-course-projects/projects/mobile-app-practice/03-basic-animation/app/src/main/res/anim/alpha_anim.xml)
 
 ## 运行方式
 
@@ -38,5 +38,5 @@
 
 ## 输出文件
 
-- 实验报告：[实验3_基础动画_实验报告.docx](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/03-basic-animation/实验3_基础动画_实验报告.docx)
-- 运行截图目录：[screenshots](/Users/cuing/AndroidStudioProjects/MyApplication/output/mobile-app-practice/03-basic-animation/screenshots)
+- 实验报告：[实验3_基础动画_实验报告.docx](/Users/cuing/AndroidStudioProjects/android-course-projects/output/mobile-app-practice/03-basic-animation/实验3_基础动画_实验报告.docx)
+- 运行截图目录：[screenshots](/Users/cuing/AndroidStudioProjects/android-course-projects/output/mobile-app-practice/03-basic-animation/screenshots)

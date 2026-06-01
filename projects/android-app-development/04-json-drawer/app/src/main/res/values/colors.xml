@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#4F8DFF</color>
+    <color name="page_bg">#F6F8FC</color>
+    <color name="text_main">#1F2937</color>
+    <color name="text_sub">#5F6B7A</color>
+    <color name="line">#D9E2EF</color>
+</resources>

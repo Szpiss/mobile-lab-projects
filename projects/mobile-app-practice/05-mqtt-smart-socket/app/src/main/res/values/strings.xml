@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">智能插座</string>
+    <string name="subscrib"><b>订&#160;阅&#160;消&#160;息</b></string>
+    <string name="conn"><b>重&#160;&#160;新&#160;&#160;连&#160;&#160;接&#160;&#160;设&#160;&#160;备</b></string>
+    <string name="getstatus"><b>获&#160;&#160;取&#160;&#160;设&#160;&#160;备&#160;&#160;状&#160;&#160;态</b></string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App04</string>
+    <string name="nav_header_text">以梦为马，莫负韶华。</string>
+    <string name="parser_json_array">数组解析</string>
+    <string name="gson_parse_object">Gson解析JSON对象</string>
+    <string name="gson_parse_array">Gson解析JSON数组</string>
+    <string name="default_text">JSON解析常用的三种方法：\n    1.JsonReader解析方法；\n    2.Gson解析JSON对象；\n    3.Gson解析JSON数组。</string>
+</resources>
