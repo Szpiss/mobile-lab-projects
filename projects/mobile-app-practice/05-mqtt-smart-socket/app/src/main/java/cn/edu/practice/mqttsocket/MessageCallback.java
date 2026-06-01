@@ -76,7 +76,13 @@ public class MessageCallback implements MqttCallbackExtended {
             }
             Message msg = mainActivity.handler.obtainMessage();
             msg.what = MainActivity.MSG_TEXT;
-            msg.obj = "收到设备消息：\n" + payload;
+            if (parse.getPower() != null || parse.getVoltage() != null || parse.getCurrent() != null) {
+                msg.obj = "收到设备状态：\n功率 " + valueOf(parse.getPower()) + "W，电压 "
+                        + valueOf(parse.getVoltage()) + "V，电流 " + valueOf(parse.getCurrent())
+                        + "A，状态 " + (parse.getKey() != null && parse.getKey() == 1 ? "打开" : "关闭");
+            } else {
+                msg.obj = "收到设备消息：\n" + payload;
+            }
             mainActivity.handler.sendMessage(msg);
         } catch (Exception e) {
             Log.e(TAG, "parse message failed", e);
